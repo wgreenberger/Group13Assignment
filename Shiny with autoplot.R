@@ -4,6 +4,11 @@ library(fpp3)
 data(tourism)
 ui <- fluidPage(
   mainPanel(plotOutput("distPlot")))
+checkboxGroupButtons(
+  inputId = "Purpose",
+  label = "Choices", 
+  choices = c("Business", "Holiday", "Other","Visiting"),
+  status = "danger")
   
 
 
